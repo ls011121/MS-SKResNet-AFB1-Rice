@@ -4,6 +4,7 @@ This repository provides the implementation of the Multi-Scale Selective Kernel 
 
 The code corresponds to the computational workflow described in the revised manuscript:
 
+
 **Classification of Aflatoxin B1 Content Grades in Mold-Contaminated Rice Using Near-Infrared Hyperspectral Imaging Integrated with a Multi-Scale Selective Kernel Residual Network**
 
 ---
@@ -37,7 +38,7 @@ Implementation of the proposed MS-SKResNet architecture, including:
 - global average pooling and global max pooling;
 - fully connected four-class classifier.
 
-### `train10.py`
+### `train_MS_SKResNet.py`
 
 Main training and evaluation script used for the repeated experiments reported in the manuscript. The script implements:
 
@@ -51,7 +52,7 @@ Main training and evaluation script used for the repeated experiments reported i
 - calculation of accuracy, Macro-Precision, Macro-Recall, and Macro-F1;
 - generation of confusion matrices and result files.
 
-`MS_SKResNet.py` and `train10.py` should be placed in the same directory.
+`MS_SKResNet.py` and `train_MS_SKResNet.py` should be placed in the same directory.
 
 ---
 
@@ -186,9 +187,9 @@ Additional dependencies are required only for specific optional functions:
 
 ## Usage
 
-Place `MS_SKResNet.py` and `train10.py` in the same directory.
+Place `MS_SKResNet.py` and `train_MS_SKResNet.py` in the same directory.
 
 Run the default workflow using:
 
 ```bash
-python train10.py --csv path/to/data.csv
+python train_MS_SKResNet.py --csv path/to/data.csv
